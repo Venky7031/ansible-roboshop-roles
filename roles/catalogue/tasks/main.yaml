@@ -8,21 +8,6 @@
     name: common
     tasks_from: nodejs
 
-- name: copy catalogue service to system directory
-  ansible.builtin.copy:
-    src: catalogue.service
-    dest: /etc/systemd/system/catalogue.service
-
-- name: systemctl daemon reload
-  ansible.builtin.systemd_service:
-    daemon_reload: true
-
-- name: start and enable catalogue
-  ansible.builtin.service:
-    name: catalogue
-    state: started
-    enabled: yes
-
 - name: copy mongodb repo
   ansible.builtin.copy:
     src: mongo.repo
