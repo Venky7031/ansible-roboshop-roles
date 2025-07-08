@@ -2,3 +2,4 @@ MYSQL_HOST: mysql.daws84.sbs
 MYSQL_ROOT_USER: root
 MYSQL_ROOT_PASSWORD: RoboShop@1
 CART_HOST: cart.daws84.sbs
+SHIPPING_HOST: shipping.daws84.sbs
